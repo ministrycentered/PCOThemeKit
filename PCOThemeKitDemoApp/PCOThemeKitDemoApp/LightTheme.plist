@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>images</key>
+	<dict/>
+	<key>colors</key>
+	<dict>
+		<key>backgroundColor</key>
+		<string>255,100,100</string>
+	</dict>
+	<key>displayName</key>
+	<string>Light Theme</string>
+	<key>name</key>
+	<string>LightTheme</string>
+</dict>
+</plist>

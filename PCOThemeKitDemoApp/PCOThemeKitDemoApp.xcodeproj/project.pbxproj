@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94B9BDC917FB8FD6009509B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B9BDC817FB8FD6009509B5 /* Foundation.framework */; };
+		94B9BDCB17FB8FD6009509B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B9BDCA17FB8FD6009509B5 /* CoreGraphics.framework */; };
+		94B9BDCD17FB8FD6009509B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B9BDCC17FB8FD6009509B5 /* UIKit.framework */; };
+		94B9BDD317FB8FD6009509B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94B9BDD117FB8FD6009509B5 /* InfoPlist.strings */; };
+		94B9BDD517FB8FD6009509B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B9BDD417FB8FD6009509B5 /* main.m */; };
+		94B9BDD917FB8FD6009509B5 /* PCOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B9BDD817FB8FD6009509B5 /* PCOAppDelegate.m */; };
+		94B9BDDC17FB8FD6009509B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B9BDDA17FB8FD6009509B5 /* Main.storyboard */; };
+		94B9BDDF17FB8FD6009509B5 /* PCOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B9BDDE17FB8FD6009509B5 /* PCOViewController.m */; };
+		94B9BDE117FB8FD6009509B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94B9BDE017FB8FD6009509B5 /* Images.xcassets */; };
+		94B9BDE817FB8FD6009509B5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B9BDE717FB8FD6009509B5 /* XCTest.framework */; };
+		94B9BDE917FB8FD6009509B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B9BDC817FB8FD6009509B5 /* Foundation.framework */; };
+		94B9BDEA17FB8FD6009509B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B9BDCC17FB8FD6009509B5 /* UIKit.framework */; };
+		94B9BDF217FB8FD6009509B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94B9BDF017FB8FD6009509B5 /* InfoPlist.strings */; };
+		94B9BDF417FB8FD6009509B5 /* PCOThemeKitDemoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B9BDF317FB8FD6009509B5 /* PCOThemeKitDemoAppTests.m */; };
+		94B9BE0617FB903A009509B5 /* libPCOThemeKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B9BE0317FB8FE6009509B5 /* libPCOThemeKit.a */; };
+		94B9BE1617FBAD9C009509B5 /* DefaultTheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94B9BE1517FBAD9C009509B5 /* DefaultTheme.plist */; };
+		94B9BE2317FC7AB1009509B5 /* LightTheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94B9BE2217FC7AB1009509B5 /* LightTheme.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94B9BDEB17FB8FD6009509B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94B9BDBD17FB8FD6009509B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94B9BDC417FB8FD6009509B5;
+			remoteInfo = PCOThemeKitDemoApp;
+		};
+		94B9BE0217FB8FE6009509B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94B9BDFD17FB8FE6009509B5 /* PCOThemeKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 94B9BD9317FB8FBB009509B5;
+			remoteInfo = PCOThemeKit;
+		};
+		94B9BE0417FB8FE6009509B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94B9BDFD17FB8FE6009509B5 /* PCOThemeKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 94B9BDA317FB8FBC009509B5;
+			remoteInfo = PCOThemeKitTests;
+		};
+		94B9BE0917FB9049009509B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94B9BDFD17FB8FE6009509B5 /* PCOThemeKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 94B9BD9217FB8FBB009509B5;
+			remoteInfo = PCOThemeKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		94B9BDC517FB8FD6009509B5 /* PCOThemeKitDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PCOThemeKitDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94B9BDC817FB8FD6009509B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		94B9BDCA17FB8FD6009509B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		94B9BDCC17FB8FD6009509B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		94B9BDD017FB8FD6009509B5 /* PCOThemeKitDemoApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PCOThemeKitDemoApp-Info.plist"; sourceTree = "<group>"; };
+		94B9BDD217FB8FD6009509B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		94B9BDD417FB8FD6009509B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		94B9BDD617FB8FD6009509B5 /* PCOThemeKitDemoApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PCOThemeKitDemoApp-Prefix.pch"; sourceTree = "<group>"; };
+		94B9BDD717FB8FD6009509B5 /* PCOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCOAppDelegate.h; sourceTree = "<group>"; };
+		94B9BDD817FB8FD6009509B5 /* PCOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCOAppDelegate.m; sourceTree = "<group>"; };
+		94B9BDDB17FB8FD6009509B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94B9BDDD17FB8FD6009509B5 /* PCOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCOViewController.h; sourceTree = "<group>"; };
+		94B9BDDE17FB8FD6009509B5 /* PCOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCOViewController.m; sourceTree = "<group>"; };
+		94B9BDE017FB8FD6009509B5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		94B9BDE617FB8FD6009509B5 /* PCOThemeKitDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PCOThemeKitDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94B9BDE717FB8FD6009509B5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		94B9BDEF17FB8FD6009509B5 /* PCOThemeKitDemoAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PCOThemeKitDemoAppTests-Info.plist"; sourceTree = "<group>"; };
+		94B9BDF117FB8FD6009509B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		94B9BDF317FB8FD6009509B5 /* PCOThemeKitDemoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCOThemeKitDemoAppTests.m; sourceTree = "<group>"; };
+		94B9BDFD17FB8FE6009509B5 /* PCOThemeKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PCOThemeKit.xcodeproj; path = ../PCOThemeKit.xcodeproj; sourceTree = "<group>"; };
+		94B9BE1517FBAD9C009509B5 /* DefaultTheme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefaultTheme.plist; sourceTree = "<group>"; };
+		94B9BE2217FC7AB1009509B5 /* LightTheme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LightTheme.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94B9BDC217FB8FD6009509B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B9BE0617FB903A009509B5 /* libPCOThemeKit.a in Frameworks */,
+				94B9BDCB17FB8FD6009509B5 /* CoreGraphics.framework in Frameworks */,
+				94B9BDCD17FB8FD6009509B5 /* UIKit.framework in Frameworks */,
+				94B9BDC917FB8FD6009509B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94B9BDE317FB8FD6009509B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B9BDE817FB8FD6009509B5 /* XCTest.framework in Frameworks */,
+				94B9BDEA17FB8FD6009509B5 /* UIKit.framework in Frameworks */,
+				94B9BDE917FB8FD6009509B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94B9BDBC17FB8FD6009509B5 = {
+			isa = PBXGroup;
+			children = (
+				94B9BDFD17FB8FE6009509B5 /* PCOThemeKit.xcodeproj */,
+				94B9BDCE17FB8FD6009509B5 /* PCOThemeKitDemoApp */,
+				94B9BDED17FB8FD6009509B5 /* PCOThemeKitDemoAppTests */,
+				94B9BDC717FB8FD6009509B5 /* Frameworks */,
+				94B9BDC617FB8FD6009509B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94B9BDC617FB8FD6009509B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94B9BDC517FB8FD6009509B5 /* PCOThemeKitDemoApp.app */,
+				94B9BDE617FB8FD6009509B5 /* PCOThemeKitDemoAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94B9BDC717FB8FD6009509B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94B9BDC817FB8FD6009509B5 /* Foundation.framework */,
+				94B9BDCA17FB8FD6009509B5 /* CoreGraphics.framework */,
+				94B9BDCC17FB8FD6009509B5 /* UIKit.framework */,
+				94B9BDE717FB8FD6009509B5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94B9BDCE17FB8FD6009509B5 /* PCOThemeKitDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				94B9BDD717FB8FD6009509B5 /* PCOAppDelegate.h */,
+				94B9BDD817FB8FD6009509B5 /* PCOAppDelegate.m */,
+				94B9BDDA17FB8FD6009509B5 /* Main.storyboard */,
+				94B9BDDD17FB8FD6009509B5 /* PCOViewController.h */,
+				94B9BDDE17FB8FD6009509B5 /* PCOViewController.m */,
+				94B9BE1517FBAD9C009509B5 /* DefaultTheme.plist */,
+				94B9BE2217FC7AB1009509B5 /* LightTheme.plist */,
+				94B9BDE017FB8FD6009509B5 /* Images.xcassets */,
+				94B9BDCF17FB8FD6009509B5 /* Supporting Files */,
+			);
+			path = PCOThemeKitDemoApp;
+			sourceTree = "<group>";
+		};
+		94B9BDCF17FB8FD6009509B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94B9BDD017FB8FD6009509B5 /* PCOThemeKitDemoApp-Info.plist */,
+				94B9BDD117FB8FD6009509B5 /* InfoPlist.strings */,
+				94B9BDD417FB8FD6009509B5 /* main.m */,
+				94B9BDD617FB8FD6009509B5 /* PCOThemeKitDemoApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94B9BDED17FB8FD6009509B5 /* PCOThemeKitDemoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				94B9BDF317FB8FD6009509B5 /* PCOThemeKitDemoAppTests.m */,
+				94B9BDEE17FB8FD6009509B5 /* Supporting Files */,
+			);
+			path = PCOThemeKitDemoAppTests;
+			sourceTree = "<group>";
+		};
+		94B9BDEE17FB8FD6009509B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94B9BDEF17FB8FD6009509B5 /* PCOThemeKitDemoAppTests-Info.plist */,
+				94B9BDF017FB8FD6009509B5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94B9BDFE17FB8FE6009509B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94B9BE0317FB8FE6009509B5 /* libPCOThemeKit.a */,
+				94B9BE0517FB8FE6009509B5 /* PCOThemeKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94B9BDC417FB8FD6009509B5 /* PCOThemeKitDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94B9BDF717FB8FD6009509B5 /* Build configuration list for PBXNativeTarget "PCOThemeKitDemoApp" */;
+			buildPhases = (
+				94B9BDC117FB8FD6009509B5 /* Sources */,
+				94B9BDC217FB8FD6009509B5 /* Frameworks */,
+				94B9BDC317FB8FD6009509B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94B9BE0A17FB9049009509B5 /* PBXTargetDependency */,
+			);
+			name = PCOThemeKitDemoApp;
+			productName = PCOThemeKitDemoApp;
+			productReference = 94B9BDC517FB8FD6009509B5 /* PCOThemeKitDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94B9BDE517FB8FD6009509B5 /* PCOThemeKitDemoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94B9BDFA17FB8FD6009509B5 /* Build configuration list for PBXNativeTarget "PCOThemeKitDemoAppTests" */;
+			buildPhases = (
+				94B9BDE217FB8FD6009509B5 /* Sources */,
+				94B9BDE317FB8FD6009509B5 /* Frameworks */,
+				94B9BDE417FB8FD6009509B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94B9BDEC17FB8FD6009509B5 /* PBXTargetDependency */,
+			);
+			name = PCOThemeKitDemoAppTests;
+			productName = PCOThemeKitDemoAppTests;
+			productReference = 94B9BDE617FB8FD6009509B5 /* PCOThemeKitDemoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94B9BDBD17FB8FD6009509B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PCO;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Ministy Centered Technology";
+				TargetAttributes = {
+					94B9BDE517FB8FD6009509B5 = {
+						TestTargetID = 94B9BDC417FB8FD6009509B5;
+					};
+				};
+			};
+			buildConfigurationList = 94B9BDC017FB8FD6009509B5 /* Build configuration list for PBXProject "PCOThemeKitDemoApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94B9BDBC17FB8FD6009509B5;
+			productRefGroup = 94B9BDC617FB8FD6009509B5 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 94B9BDFE17FB8FE6009509B5 /* Products */;
+					ProjectRef = 94B9BDFD17FB8FE6009509B5 /* PCOThemeKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				94B9BDC417FB8FD6009509B5 /* PCOThemeKitDemoApp */,
+				94B9BDE517FB8FD6009509B5 /* PCOThemeKitDemoAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		94B9BE0317FB8FE6009509B5 /* libPCOThemeKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPCOThemeKit.a;
+			remoteRef = 94B9BE0217FB8FE6009509B5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		94B9BE0517FB8FE6009509B5 /* PCOThemeKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PCOThemeKitTests.xctest;
+			remoteRef = 94B9BE0417FB8FE6009509B5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94B9BDC317FB8FD6009509B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B9BE2317FC7AB1009509B5 /* LightTheme.plist in Resources */,
+				94B9BE1617FBAD9C009509B5 /* DefaultTheme.plist in Resources */,
+				94B9BDE117FB8FD6009509B5 /* Images.xcassets in Resources */,
+				94B9BDD317FB8FD6009509B5 /* InfoPlist.strings in Resources */,
+				94B9BDDC17FB8FD6009509B5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94B9BDE417FB8FD6009509B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B9BDF217FB8FD6009509B5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94B9BDC117FB8FD6009509B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B9BDD517FB8FD6009509B5 /* main.m in Sources */,
+				94B9BDDF17FB8FD6009509B5 /* PCOViewController.m in Sources */,
+				94B9BDD917FB8FD6009509B5 /* PCOAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94B9BDE217FB8FD6009509B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B9BDF417FB8FD6009509B5 /* PCOThemeKitDemoAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94B9BDEC17FB8FD6009509B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94B9BDC417FB8FD6009509B5 /* PCOThemeKitDemoApp */;
+			targetProxy = 94B9BDEB17FB8FD6009509B5 /* PBXContainerItemProxy */;
+		};
+		94B9BE0A17FB9049009509B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PCOThemeKit;
+			targetProxy = 94B9BE0917FB9049009509B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94B9BDD117FB8FD6009509B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94B9BDD217FB8FD6009509B5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		94B9BDDA17FB8FD6009509B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94B9BDDB17FB8FD6009509B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94B9BDF017FB8FD6009509B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94B9BDF117FB8FD6009509B5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94B9BDF517FB8FD6009509B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		94B9BDF617FB8FD6009509B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94B9BDF817FB8FD6009509B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PCOThemeKitDemoApp/PCOThemeKitDemoApp-Prefix.pch";
+				INFOPLIST_FILE = "PCOThemeKitDemoApp/PCOThemeKitDemoApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../PCOThemeKit/\"";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		94B9BDF917FB8FD6009509B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PCOThemeKitDemoApp/PCOThemeKitDemoApp-Prefix.pch";
+				INFOPLIST_FILE = "PCOThemeKitDemoApp/PCOThemeKitDemoApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../PCOThemeKit/\"";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		94B9BDFB17FB8FD6009509B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PCOThemeKitDemoApp.app/PCOThemeKitDemoApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PCOThemeKitDemoApp/PCOThemeKitDemoApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PCOThemeKitDemoAppTests/PCOThemeKitDemoAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		94B9BDFC17FB8FD6009509B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PCOThemeKitDemoApp.app/PCOThemeKitDemoApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PCOThemeKitDemoApp/PCOThemeKitDemoApp-Prefix.pch";
+				INFOPLIST_FILE = "PCOThemeKitDemoAppTests/PCOThemeKitDemoAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94B9BDC017FB8FD6009509B5 /* Build configuration list for PBXProject "PCOThemeKitDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94B9BDF517FB8FD6009509B5 /* Debug */,
+				94B9BDF617FB8FD6009509B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94B9BDF717FB8FD6009509B5 /* Build configuration list for PBXNativeTarget "PCOThemeKitDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94B9BDF817FB8FD6009509B5 /* Debug */,
+				94B9BDF917FB8FD6009509B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94B9BDFA17FB8FD6009509B5 /* Build configuration list for PBXNativeTarget "PCOThemeKitDemoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94B9BDFB17FB8FD6009509B5 /* Debug */,
+				94B9BDFC17FB8FD6009509B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94B9BDBD17FB8FD6009509B5 /* Project object */;
+}

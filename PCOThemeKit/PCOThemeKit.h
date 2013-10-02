@@ -3,11 +3,24 @@
 //  PCOThemeKit
 //
 //  Created by Skylar Schipper on 10/1/13.
-//  Copyright (c) 2013 Ministy Centered Technology. All rights reserved.
+//  Copyright (c) 2013 Ministry Centered Technology. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#ifndef _pco_theme_kit_
+#define _pco_theme_kit_
 
-@interface PCOThemeKit : NSObject
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < 70000
+#error PCOThemeKit relies heavily on iOS 7 and makes asumptions that the iOS 7 SDK is available
+#endif
 
-@end
+@import Foundation;
+@import UIKit;
+
+
+#import "PCOThemeHelpers.h"
+#import "PCOTheme.h"
+#import "PCOThemeManager.h"
+#import "UIResponder+PCOThemedResponder.h"
+
+
+#endif

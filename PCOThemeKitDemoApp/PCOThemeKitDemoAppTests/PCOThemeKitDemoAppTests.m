@@ -1,6 +1,6 @@
 //
-//  PCOThemeKitTests.m
-//  PCOThemeKitTests
+//  PCOThemeKitDemoAppTests.m
+//  PCOThemeKitDemoAppTests
 //
 //  Created by Skylar Schipper on 10/1/13.
 //  Copyright (c) 2013 Ministry Centered Technology. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface PCOThemeKitTests : XCTestCase
+@interface PCOThemeKitDemoAppTests : XCTestCase
 
 @end
 
-@implementation PCOThemeKitTests
+@implementation PCOThemeKitDemoAppTests
 
 - (void)setUp
 {
