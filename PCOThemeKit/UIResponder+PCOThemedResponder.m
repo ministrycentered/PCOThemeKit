@@ -33,18 +33,47 @@
 @implementation UIResponder (PCOThemedResponder)
 
 - (void)themeDidChange:(NSNotification *)notification {
-    [self updateThemes];
+    [self _internalUpdateTheme];
 }
 - (NSDictionary *)themeColorBindings {
-    return @{
-             @"backgroundColor": @"backgroundColor"
-             };
+    return @{};
+}
+- (NSDictionary *)themeImageBindings {
+    return @{};
 }
 
-- (void)updateThemes {
+- (void)_internalUpdateTheme {
+    [self pco_updateThemeColors];
+    [self pco_updateThemeImages];
+    [self updateTheme];
+}
+- (void)updateTheme {}
+- (void)pco_updateThemeColors {
     NSDictionary *bindings = [self themeColorBindings];
     for (NSString *key in [bindings allKeys]) {
-        [self setValue:[[PCOThemeManager defaultThemeManager] colorForKey:key] forKeyPath:bindings[key]];
+        UIColor *color = [[PCOThemeManager defaultThemeManager] colorForKey:key];
+        id value = bindings[key];
+        if ([value isKindOfClass:[NSArray class]]) {
+            for (NSString *keyPath in value) {
+                [self setValue:color forKeyPath:keyPath];
+            }
+        } else {
+            [self setValue:color forKeyPath:value];
+        }
+    }
+}
+- (void)pco_updateThemeImages {
+    NSDictionary *bindings = [self themeImageBindings];
+    for (NSString *key in [bindings allKeys]) {
+        UIImage *image = [[PCOThemeManager defaultThemeManager] imageForKey:key];
+        id value = bindings[key];
+        if ([value isKindOfClass:[NSArray class]]) {
+            for (NSString *keyPath in value) {
+                [self setValue:image forKeyPath:keyPath];
+            }
+        } else {
+            [self setValue:image forKeyPath:value];
+        }
     }
 }
 
@@ -53,7 +82,7 @@
                                              selector:@selector(themeDidChange:)
                                                  name:PCOThemeDidChangeNotification
                                                object:nil];
-    [self updateThemes];
+    [self _internalUpdateTheme];
 }
 - (void)stopListeningForThemeChanges {
     [[NSNotificationCenter defaultCenter] removeObserver:self

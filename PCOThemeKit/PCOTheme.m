@@ -73,8 +73,12 @@
     return color;
 }
 - (UIImage *)imageForKey:(NSString *)key {
-#warning imageForKey implementation
-    return nil;
+    UIImage *image = self.images[key];
+    if (!image) {
+        image = [UIImage imageNamed:self.loadedData[kPCOThemeImagesKey][key]];
+        self.images[key] = image;
+    }
+    return image;
 }
 
 #pragma mark -

@@ -7,9 +7,14 @@
 	<key>displayName</key>
 	<string>Default Theme</string>
 	<key>images</key>
-	<dict/>
+	<dict>
+		<key>test</key>
+		<string>test_1</string>
+	</dict>
 	<key>colors</key>
 	<dict>
+		<key>backgroundTextColor</key>
+		<string>245,245,245</string>
 		<key>testFallback</key>
 		<string>255,255,255</string>
 		<key>backgroundColor</key>

@@ -35,7 +35,8 @@
 - (void)stopListeningForThemeChanges;
 
 - (NSDictionary *)themeColorBindings;
+- (NSDictionary *)themeImageBindings;
 
-- (void)updateThemes;
+- (void)updateTheme;
 
 @end

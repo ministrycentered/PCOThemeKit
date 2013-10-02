@@ -3,9 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>images</key>
-	<dict/>
+	<dict>
+		<key>test</key>
+		<string>test_2</string>
+	</dict>
 	<key>colors</key>
 	<dict>
+		<key>backgroundTextColor</key>
+		<string>20,20,20</string>
 		<key>backgroundColor</key>
 		<string>255,100,100</string>
 	</dict>

@@ -10,4 +10,10 @@
 
 @interface PCOViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UIView *testView;
+@property (nonatomic, weak) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *themeNameLabel;
+
+- (IBAction)changeThemeAction:(id)sender;
+
 @end

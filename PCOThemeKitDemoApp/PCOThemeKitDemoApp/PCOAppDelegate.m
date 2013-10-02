@@ -15,12 +15,6 @@
     [[PCOThemeManager defaultThemeManager] registerThemeWithName:@"DefaultTheme"];
     [[PCOThemeManager defaultThemeManager] registerThemeWithName:@"LightTheme"];
     
-    double delayInSeconds = 5.0;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        [[PCOThemeManager defaultThemeManager] setCurrentThemeWithName:@"LightTheme"];
-    });
-    
     
     return YES;
 }

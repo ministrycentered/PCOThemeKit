@@ -19,10 +19,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    TestFallbackView *view = [[TestFallbackView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    view.backgroundColor = [UIColor orangeColor];
-    [view startListeningForThemeChanges];
-    [self.view addSubview:view];
+    [self.testView startListeningForThemeChanges];
     
     [self startListeningForThemeChanges];
 }
@@ -30,11 +27,33 @@
     [super viewDidDisappear:animated];
     
     [self stopListeningForThemeChanges];
+    [self.testView stopListeningForThemeChanges];
+}
+
+- (void)changeThemeAction:(id)sender {
+    if ([[[[PCOThemeManager defaultThemeManager] currentTheme] name] isEqualToString:@"LightTheme"]) {
+        [[PCOThemeManager defaultThemeManager] setCurrentThemeWithName:@"DefaultTheme"];
+    } else {
+        [[PCOThemeManager defaultThemeManager] setCurrentThemeWithName:@"LightTheme"];
+    }
+}
+
+- (void)updateTheme {
+    self.themeNameLabel.text = [[[PCOThemeManager defaultThemeManager] currentTheme] displayName];
 }
 
 - (NSDictionary *)themeColorBindings {
     return @{
-             @"backgroundColor": @"view.backgroundColor"
+             @"backgroundColor": @[
+                     @"view.backgroundColor",
+                     @"themeNameLabel.backgroundColor"
+                     ],
+             @"backgroundTextColor": @"themeNameLabel.textColor"
+             };
+}
+- (NSDictionary *)themeImageBindings {
+    return @{
+             @"test": @"imageView.image"
              };
 }
 
