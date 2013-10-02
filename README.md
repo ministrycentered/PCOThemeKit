@@ -1,6 +1,20 @@
 PCOThemeManager
 ===============
 
+## Create a theme
+
+The easiest way to create a theme is using rake.
+
+`cd` into PCOThemeManager directory.
+
+Run `$ bundle install` this will install the plist gem used to generate the plists
+
+Run `$ rake theme:create["Test Theme"]`
+
+The rake task creates a new theme plist for you.  If there is already a theme at that location it will prompt if you want to override.
+
+Just add the new plist file into Xcode and you're good to go.
+
 ## Theme File Structure
 
 A theme file is a simple plist.
