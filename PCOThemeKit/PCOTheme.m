@@ -73,6 +73,7 @@
     return color;
 }
 - (UIImage *)imageForKey:(NSString *)key {
+#warning imageForKey implementation
     return nil;
 }
 
