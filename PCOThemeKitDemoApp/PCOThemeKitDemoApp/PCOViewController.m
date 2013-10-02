@@ -8,6 +8,7 @@
 
 #import "PCOViewController.h"
 #import "UIResponder+PCOThemedResponder.h"
+#import "TestFallbackView.h"
 
 @interface PCOViewController ()
 
@@ -17,6 +18,11 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
+    TestFallbackView *view = [[TestFallbackView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    view.backgroundColor = [UIColor orangeColor];
+    [view startListeningForThemeChanges];
+    [self.view addSubview:view];
     
     [self startListeningForThemeChanges];
 }

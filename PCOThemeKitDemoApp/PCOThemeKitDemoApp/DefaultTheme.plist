@@ -10,6 +10,8 @@
 	<dict/>
 	<key>colors</key>
 	<dict>
+		<key>testFallback</key>
+		<string>255,255,255</string>
 		<key>backgroundColor</key>
 		<string>30,30,30</string>
 	</dict>

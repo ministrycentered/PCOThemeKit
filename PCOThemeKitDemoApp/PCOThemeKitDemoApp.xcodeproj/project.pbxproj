@@ -24,6 +24,7 @@
 		94B9BE0617FB903A009509B5 /* libPCOThemeKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B9BE0317FB8FE6009509B5 /* libPCOThemeKit.a */; };
 		94B9BE1617FBAD9C009509B5 /* DefaultTheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94B9BE1517FBAD9C009509B5 /* DefaultTheme.plist */; };
 		94B9BE2317FC7AB1009509B5 /* LightTheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94B9BE2217FC7AB1009509B5 /* LightTheme.plist */; };
+		94B9BE2717FC7F0C009509B5 /* TestFallbackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B9BE2617FC7F0C009509B5 /* TestFallbackView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		94B9BDFD17FB8FE6009509B5 /* PCOThemeKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PCOThemeKit.xcodeproj; path = ../PCOThemeKit.xcodeproj; sourceTree = "<group>"; };
 		94B9BE1517FBAD9C009509B5 /* DefaultTheme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefaultTheme.plist; sourceTree = "<group>"; };
 		94B9BE2217FC7AB1009509B5 /* LightTheme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LightTheme.plist; sourceTree = "<group>"; };
+		94B9BE2517FC7F0C009509B5 /* TestFallbackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFallbackView.h; sourceTree = "<group>"; };
+		94B9BE2617FC7F0C009509B5 /* TestFallbackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFallbackView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,8 +149,9 @@
 				94B9BDDA17FB8FD6009509B5 /* Main.storyboard */,
 				94B9BDDD17FB8FD6009509B5 /* PCOViewController.h */,
 				94B9BDDE17FB8FD6009509B5 /* PCOViewController.m */,
-				94B9BE1517FBAD9C009509B5 /* DefaultTheme.plist */,
-				94B9BE2217FC7AB1009509B5 /* LightTheme.plist */,
+				94B9BE2517FC7F0C009509B5 /* TestFallbackView.h */,
+				94B9BE2617FC7F0C009509B5 /* TestFallbackView.m */,
+				94B9BE2417FC7EF6009509B5 /* Themes */,
 				94B9BDE017FB8FD6009509B5 /* Images.xcassets */,
 				94B9BDCF17FB8FD6009509B5 /* Supporting Files */,
 			);
@@ -190,6 +194,15 @@
 				94B9BE0517FB8FE6009509B5 /* PCOThemeKitTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		94B9BE2417FC7EF6009509B5 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				94B9BE1517FBAD9C009509B5 /* DefaultTheme.plist */,
+				94B9BE2217FC7AB1009509B5 /* LightTheme.plist */,
+			);
+			name = Themes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94B9BE2717FC7F0C009509B5 /* TestFallbackView.m in Sources */,
 				94B9BDD517FB8FD6009509B5 /* main.m in Sources */,
 				94B9BDDF17FB8FD6009509B5 /* PCOViewController.m in Sources */,
 				94B9BDD917FB8FD6009509B5 /* PCOAppDelegate.m in Sources */,
