@@ -31,7 +31,7 @@
 #define _pco_theme_kit_
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < 70000
-#error PCOThemeKit relies heavily on iOS 7 and makes asumptions that the iOS 7 SDK is available
+#error PCOThemeKit relies heavily on iOS 7 and makes assumptions that the iOS 7 SDK is available
 #endif
 
 @import Foundation;
