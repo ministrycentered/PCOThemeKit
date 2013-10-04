@@ -34,6 +34,8 @@
 
 UIKIT_EXTERN NSString * const PCOThemeDidChangeNotification;
 
+#define _COL(color_key) [[PCOThemeManager defaultThemeManager] colorForKey:color_key];
+
 /*!
  *  <#Description#>
  */
