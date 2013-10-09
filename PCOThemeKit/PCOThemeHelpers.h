@@ -40,6 +40,14 @@ static inline BOOL pco_parseThemeColorRGBString(NSString *colorString, CGFloat *
     NSArray *values = [colorString componentsSeparatedByString:@","];
     
     if ([values count] < 3) {
+        if ([values count] == 1) {
+            *red = [[values firstObject] floatValue];
+            *green = [[values firstObject] floatValue];
+            *blue = [[values firstObject] floatValue];
+            *alpha = 1.0;
+            
+            return YES;
+        }
         if (error != NULL) {
             *error = [NSError errorWithDomain:kPCOThemeManagerErrorDomain code:1 userInfo:@{}];
         }
