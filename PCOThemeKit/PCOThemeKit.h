@@ -30,7 +30,7 @@
 #ifndef _pco_theme_kit_
 #define _pco_theme_kit_
 
-#if __IPHONE_OS_VERSION_MIN_REQUIRED < 70000
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
 #error PCOThemeKit relies heavily on iOS 7 and makes assumptions that the iOS 7 SDK is available
 #endif
 
