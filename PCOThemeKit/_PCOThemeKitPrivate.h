@@ -1,5 +1,5 @@
 //
-//  PCOThemeKit.h
+//  _PCOThemeKitPrivate.h
 //  PCOThemeKit
 //
 //  Author: Skylar Schipper <skylar@ministrycentered.com>
@@ -27,22 +27,9 @@
 // THE SOFTWARE.
 //
 
-#ifndef _pco_theme_kit_
-#define _pco_theme_kit_
+#ifndef PCOThemeKit__PCOThemeKitPrivate_h
+#define PCOThemeKit__PCOThemeKitPrivate_h
 
-#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
-#error PCOThemeKit relies heavily on iOS 7 and makes assumptions that the iOS 7 SDK is available
-#endif
-
-@import Foundation;
-@import UIKit;
-
-
-#import "PCOThemeHelpers.h"
-#import "PCOTheme.h"
-#import "PCOThemeManager.h"
-#import "UIResponder+PCOThemedResponder.h"
-#import "PCOThemeWindow.h"
-
+static NSString * const _PCOThemeDidProcessChangesNotification = @"_PCOThemeDidProcessChangesNotification";
 
 #endif

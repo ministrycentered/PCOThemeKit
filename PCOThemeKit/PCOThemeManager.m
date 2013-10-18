@@ -28,6 +28,7 @@
 //
 
 #import "PCOThemeManager.h"
+#import "_PCOThemeKitPrivate.h"
 
 id static _sharedPCOThemeManager = nil;
 
@@ -79,10 +80,12 @@ id static _sharedPCOThemeManager = nil;
     return self.themes[themeName];
 }
 - (void)setCurrentTheme:(PCOTheme *)currentTheme {
+    [[NSNotificationCenter defaultCenter] postNotificationName:PCOThemeWillChangeNotification object:self];
     [self willChangeValueForKey:@"currentTheme"];
     _currentTheme = currentTheme;
     [self didChangeValueForKey:@"currentTheme"];
     [[NSNotificationCenter defaultCenter] postNotificationName:PCOThemeDidChangeNotification object:self];
+    [[NSNotificationCenter defaultCenter] postNotificationName:_PCOThemeDidProcessChangesNotification object:self];
 }
 - (void)setCurrentThemeWithName:(NSString *)themeName {
     PCOTheme *theme = [self themeWithName:themeName];
@@ -119,3 +122,4 @@ id static _sharedPCOThemeManager = nil;
 @end
 
 NSString * const PCOThemeDidChangeNotification = @"PCOThemeDidChangeNotification";
+NSString * const PCOThemeWillChangeNotification = @"PCOThemeWillChangeNotification";

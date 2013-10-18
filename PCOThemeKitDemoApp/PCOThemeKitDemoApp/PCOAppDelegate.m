@@ -15,6 +15,10 @@
     [[PCOThemeManager defaultThemeManager] registerThemeWithName:@"DefaultTheme"];
     [[PCOThemeManager defaultThemeManager] registerThemeWithName:@"LightTheme"];
     
+    self.window = [[PCOThemeWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+    
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

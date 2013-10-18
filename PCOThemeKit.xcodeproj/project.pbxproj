@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		942576951811B09F0055081F /* PCOThemeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 942576941811B09F0055081F /* PCOThemeWindow.m */; };
 		94B9BD9717FB8FBB009509B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B9BD9617FB8FBB009509B5 /* Foundation.framework */; };
 		94B9BD9C17FB8FBB009509B5 /* PCOThemeKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 94B9BD9B17FB8FBB009509B5 /* PCOThemeKit.h */; };
 		94B9BDA517FB8FBC009509B5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B9BDA417FB8FBC009509B5 /* XCTest.framework */; };
@@ -44,6 +45,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		942576931811B09F0055081F /* PCOThemeWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCOThemeWindow.h; sourceTree = "<group>"; };
+		942576941811B09F0055081F /* PCOThemeWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCOThemeWindow.m; sourceTree = "<group>"; };
+		942576971811B57B0055081F /* _PCOThemeKitPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _PCOThemeKitPrivate.h; sourceTree = "<group>"; };
 		94B9BD9317FB8FBB009509B5 /* libPCOThemeKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPCOThemeKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		94B9BD9617FB8FBB009509B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		94B9BD9A17FB8FBB009509B5 /* PCOThemeKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PCOThemeKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -126,6 +130,9 @@
 				94B9BE1317FBA935009509B5 /* PCOTheme.m */,
 				94B9BE0F17FB9326009509B5 /* UIResponder+PCOThemedResponder.h */,
 				94B9BE1017FB9326009509B5 /* UIResponder+PCOThemedResponder.m */,
+				942576931811B09F0055081F /* PCOThemeWindow.h */,
+				942576941811B09F0055081F /* PCOThemeWindow.m */,
+				942576971811B57B0055081F /* _PCOThemeKitPrivate.h */,
 				94B9BD9917FB8FBB009509B5 /* Supporting Files */,
 			);
 			path = PCOThemeKit;
@@ -238,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				942576951811B09F0055081F /* PCOThemeWindow.m in Sources */,
 				94B9BE1117FB9326009509B5 /* UIResponder+PCOThemedResponder.m in Sources */,
 				94B9BE1417FBA935009509B5 /* PCOTheme.m in Sources */,
 				94B9BE0D17FB9065009509B5 /* PCOThemeManager.m in Sources */,

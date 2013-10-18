@@ -33,6 +33,7 @@
 #import "PCOTheme.h"
 
 UIKIT_EXTERN NSString * const PCOThemeDidChangeNotification;
+UIKIT_EXTERN NSString * const PCOThemeWillChangeNotification;
 
 #define _COL(color_key) [[PCOThemeManager defaultThemeManager] colorForKey:color_key]
 
