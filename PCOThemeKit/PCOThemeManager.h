@@ -30,6 +30,9 @@
 @import Foundation;
 @import UIKit;
 
+#ifndef PCOThemeKit_PCOThemeManager_h
+#define PCOThemeKit_PCOThemeManager_h
+
 #import "PCOTheme.h"
 
 UIKIT_EXTERN NSString * const PCOThemeDidChangeNotification;
@@ -38,7 +41,7 @@ UIKIT_EXTERN NSString * const PCOThemeWillChangeNotification;
 #define _COL(color_key) [[PCOThemeManager defaultThemeManager] colorForKey:color_key]
 
 /*!
- *  <#Description#>
+ *  The theme manager is the default way to interact with themes.  You will want to register themes to use them.  The first theme registered will become the fallback theme.   If the key is not defined in a secondary theme then the manager will fall back to the default theme to load the value for the passed key.
  */
 @interface PCOThemeManager : NSObject
 
@@ -76,3 +79,5 @@ UIKIT_EXTERN NSString * const PCOThemeWillChangeNotification;
 - (UIImage *)imageForKey:(NSString *)key;
 
 @end
+
+#endif
