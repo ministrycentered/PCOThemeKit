@@ -38,5 +38,6 @@
 - (NSDictionary *)themeImageBindings;
 
 - (void)updateTheme;
+- (void)setNeedsUpdatedTheme;
 
 @end

@@ -47,7 +47,12 @@
     [self pco_updateThemeImages];
     [self updateTheme];
 }
-- (void)updateTheme {}
+- (void)setNeedsUpdatedTheme {
+    [self _internalUpdateTheme];
+}
+- (void)updateTheme {
+    
+}
 - (void)pco_updateThemeColors {
     NSDictionary *bindings = [self themeColorBindings];
     for (NSString *key in [bindings allKeys]) {
