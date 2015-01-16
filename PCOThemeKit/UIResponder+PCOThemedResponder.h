@@ -37,7 +37,7 @@
 - (NSDictionary *)themeColorBindings;
 - (NSDictionary *)themeImageBindings;
 
-- (void)updateTheme;
+- (void)updateTheme NS_REQUIRES_SUPER;
 - (void)setNeedsUpdatedTheme;
 
 @end
