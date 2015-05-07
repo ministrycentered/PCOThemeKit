@@ -118,6 +118,13 @@ id static _sharedPCOThemeManager = nil;
     }
     return i;
 }
+- (NSString *)settingForKey:(NSString *)key {
+    NSString *s = [self.currentTheme settingForKey:key];
+    if (!s) {
+        s = [self.fallbackTheme settingForKey:key];
+    }
+    return s;
+}
 
 @end
 

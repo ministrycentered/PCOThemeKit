@@ -78,6 +78,7 @@ UIKIT_EXTERN NSString * const PCOThemeWillChangeNotification;
 #pragma mark - Settings
 - (UIColor *)colorForKey:(NSString *)key;
 - (UIImage *)imageForKey:(NSString *)key;
+- (NSString *)settingForKey:(NSString *)key;
 
 @end
 

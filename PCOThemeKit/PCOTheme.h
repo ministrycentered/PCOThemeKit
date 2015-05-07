@@ -58,6 +58,8 @@
  */
 - (UIImage *)imageForKey:(NSString *)key;
 
+- (NSString *)settingForKey:(NSString *)key;
+
 #pragma mark -
 #pragma mark - Setup
 
@@ -75,6 +77,11 @@
  *  The name of the theme that can be displayed to the user.
  */
 @property (nonatomic, strong, readonly) NSString *displayName;
+
+/*!
+ *  The identifier for the theme
+ */
+@property (nonatomic, strong, readonly) NSString *identifier;
 
 /*!
  *  Initialize a theme with a file path
@@ -111,3 +118,5 @@ UIKIT_EXTERN NSString * const kPCOThemeNameKey;
 UIKIT_EXTERN NSString * const kPCOThemeDisplayNameKey;
 UIKIT_EXTERN NSString * const kPCOThemeColorsKey;
 UIKIT_EXTERN NSString * const kPCOThemeImagesKey;
+UIKIT_EXTERN NSString * const kPCOThemeSettingsKey;
+UIKIT_EXTERN NSString * const kPCOThemeIdentifierKey;

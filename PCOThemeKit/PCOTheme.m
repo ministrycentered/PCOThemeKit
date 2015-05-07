@@ -35,12 +35,14 @@
 @property (nonatomic, strong) NSDictionary *loadedData;
 @property (nonatomic, strong) NSMutableDictionary *colors;
 @property (nonatomic, strong) NSMutableDictionary *images;
+@property (nonatomic, strong) NSMutableDictionary *settings;
 
 @end
 
 @implementation PCOTheme
 @synthesize name = _name;
 @synthesize displayName = _displayName;
+@synthesize identifier = _identifier;
 
 - (instancetype)initWithFilePath:(NSString *)filePath {
     self = [super init];
@@ -80,6 +82,16 @@
     }
     return image;
 }
+- (NSString *)settingForKey:(NSString *)key {
+    NSString *setting = self.settings[key];
+    if (!setting) {
+        setting = self.loadedData[kPCOThemeSettingsKey][key];
+        if (setting) {
+            self.settings[key] = setting;
+        }
+    }
+    return setting;
+}
 
 #pragma mark -
 #pragma mark - Lazy Loaders
@@ -113,6 +125,19 @@
     }
     return _images;
 }
+- (NSMutableDictionary *)settings {
+    if (!_settings) {
+        _settings = [NSMutableDictionary dictionary];
+    }
+    return _settings;
+}
+- (NSString *)identifier {
+    if (!_identifier) {
+        _identifier = self.loadedData[kPCOThemeIdentifierKey];
+    }
+    return _identifier;
+}
+
 
 @end
 
@@ -121,3 +146,5 @@ NSString * const kPCOThemeNameKey = @"name";
 NSString * const kPCOThemeDisplayNameKey = @"displayName";
 NSString * const kPCOThemeColorsKey = @"colors";
 NSString * const kPCOThemeImagesKey = @"images";
+NSString * const kPCOThemeIdentifierKey = @"identifier";
+NSString * const kPCOThemeSettingsKey = @"settings";
