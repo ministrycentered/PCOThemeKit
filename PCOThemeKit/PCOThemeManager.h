@@ -35,8 +35,10 @@
 
 #import "PCOTheme.h"
 
-UIKIT_EXTERN NSString * const PCOThemeDidChangeNotification;
-UIKIT_EXTERN NSString * const PCOThemeWillChangeNotification;
+NS_ASSUME_NONNULL_BEGIN
+
+UIKIT_EXTERN NSString *const PCOThemeDidChangeNotification;
+UIKIT_EXTERN NSString *const PCOThemeWillChangeNotification;
 
 #define _COL(color_key) [[PCOThemeManager defaultThemeManager] colorForKey:color_key]
 #define _IMG(image_key) [[PCOThemeManager defaultThemeManager] imageForKey:image_key]
@@ -55,31 +57,33 @@ UIKIT_EXTERN NSString * const PCOThemeWillChangeNotification;
  */
 - (void)registerThemeWithName:(NSString *)themeName;
 
-- (PCOTheme *)themeWithName:(NSString *)themeName;
+- (nullable PCOTheme *)themeWithName:(NSString *)themeName;
 
 - (void)setCurrentThemeWithName:(NSString *)themeName;
-@property (nonatomic, strong) PCOTheme *currentTheme;
+@property (nonatomic, strong, nullable) PCOTheme *currentTheme;
 
 /*!
  *  This theme is used when a theme doesn't implement a key for a color or image.
  *
  *  Set from the first theme registered with the theme manager
  */
-@property (nonatomic, strong, readonly) PCOTheme *fallbackTheme;
+@property (nonatomic, strong, readonly, nullable) PCOTheme *fallbackTheme;
 
 /*!
  *  Shared instance class method for accessing the shared instance of PCOThemeManager
  *
  *  \return Returns the shared instance of PCOThemeManager
  */
-+ (instancetype)defaultThemeManager;
+@property (nonatomic, copy, readonly, class) PCOThemeManager *defaultThemeManager;
 
 #pragma mark -
 #pragma mark - Settings
-- (UIColor *)colorForKey:(NSString *)key;
-- (UIImage *)imageForKey:(NSString *)key;
-- (NSString *)settingForKey:(NSString *)key;
+- (nullable UIColor *)colorForKey:(NSString *)key;
+- (nullable UIImage *)imageForKey:(NSString *)key;
+- (nullable NSString *)settingForKey:(NSString *)key;
 
 @end
+
+NS_ASSUME_NONNULL_END
 
 #endif

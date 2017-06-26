@@ -30,8 +30,6 @@
 #import "PCOThemeManager.h"
 #import "_PCOThemeKitPrivate.h"
 
-id static _sharedPCOThemeManager = nil;
-
 @interface PCOThemeManager ()
 
 @property (nonatomic, strong) NSMutableDictionary *themes;
@@ -40,27 +38,16 @@ id static _sharedPCOThemeManager = nil;
 
 @implementation PCOThemeManager
 
-
-#pragma mark -
-#pragma mark - Initialization
-- (id)init {
-	self = [super init];
-	if (self) {
-		
-	}
-	return self;
-}
-
 #pragma mark -
 #pragma mark - Singleton
 
-+ (instancetype)defaultThemeManager {
-	@synchronized (self) {
-        if (!_sharedPCOThemeManager) {
-            _sharedPCOThemeManager = [[[self class] alloc] init];
-        }
-        return _sharedPCOThemeManager;
-    }
++ (PCOThemeManager *)defaultThemeManager {
+    static PCOThemeManager *manager;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        manager = [[PCOThemeManager alloc] init];
+    });
+    return manager;
 }
 
 #pragma mark -
